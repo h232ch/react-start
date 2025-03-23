@@ -22,50 +22,68 @@
 
 
 /* Form Elements */
+/* ------------------------ */
+/* Main Board Styling       */
+/* ------------------------ */
+.board {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 10px;
+}
+
+/* Post Header */
+.board h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Post Form */
 .board input[type="text"],
 .board textarea {
-  padding: 10px;
+  padding: 12px;
   width: 100%;
-  max-width: 600px;
+  max-width: 100%;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
   margin-bottom: 12px;
   font-size: 16px;
+  background-color: #fafafa;
 }
 
-.board textarea {
-  resize: vertical;
-  min-height: 80px;
-}
-
+/* Buttons */
 .board button {
-  padding: 8px 16px;
-  background-color: #333;
-  color: white;
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: #fff;
   border: none;
-  border-radius: 4px;
   font-size: 14px;
+  border-radius: 6px;
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .board button:hover {
-  background-color: #333;
+  background-color: #0056b3;
 }
 
-/* List Styles */
+/* Board List */
 .board ul {
   list-style: none;
   padding: 0;
 }
 
 .board li {
-  background-color: white;
-  padding: 15px;
-  border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  margin-bottom: 10px;
-  transition: transform 0.1s ease-in-out;
+  background-color: #f8f9fa;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.1s ease;
 }
 
 .board li:hover {
@@ -81,4 +99,25 @@
 
 .board li strong:hover {
   text-decoration: underline;
+}
+
+/* Comment section inside detail view */
+.board .comment-section {
+  margin-top: 30px;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 20px;
+}
+
+.board .comment-section li {
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.board .comment-section small {
+  color: #888;
+  display: block;
+  margin-top: 4px;
 }

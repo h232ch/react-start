@@ -1,17 +1,49 @@
-input {
-    padding: 8px;
-    margin-right: 10px;
+/* Login Page Styles */
+
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    box-sizing: border-box;
   }
   
-  button {
-    padding: 9px 12px;
+  .login-container h2 {
+    margin-bottom: 25px;
+    font-size: 26px;
+    color: #333;
+  }
+  
+  .login-container input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+    box-sizing: border-box;
+  }
+  
+  .login-container button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
     background-color: #007bff;
     color: white;
-    border: none;
     cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-sizing: border-box;
   }
   
-  button:hover {
+  .login-container button:hover {
     background-color: #0056b3;
   }
   
