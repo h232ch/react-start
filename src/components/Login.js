@@ -1,6 +1,6 @@
 // src/components/Login.js
 import React, { useState } from 'react';
-import './Login.css';
+import './Login.css'; // ✅ Import the Login styles
 
 function Login() {
   const [username, setUsername] = useState('');
@@ -13,7 +13,7 @@ function Login() {
   };
 
   return (
-    <div>
+    <div className="login-container"> {/* ✅ Apply CSS class */}
       <h2>Login</h2>
       <input
         type="text"
