@@ -1,4 +1,3 @@
-// src/components/BoardForm.js
 import React, { useState } from 'react';
 
 function BoardForm({ onSubmit }) {
@@ -21,20 +20,18 @@ function BoardForm({ onSubmit }) {
   };
 
   return (
-    <div style={{ marginBottom: '20px' }}>
+    <div className="board">
       <h3>Write a Post</h3>
       <input
         type="text"
         placeholder="Title"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
-        style={{ display: 'block', marginBottom: '10px', width: '100%' }}
       />
       <textarea
         placeholder="Body"
         value={body}
         onChange={(e) => setBody(e.target.value)}
-        style={{ display: 'block', marginBottom: '10px', width: '100%', height: '80px' }}
       />
       <button onClick={handleSubmit}>Submit</button>
     </div>

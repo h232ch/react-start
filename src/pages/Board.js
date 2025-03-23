@@ -1,4 +1,3 @@
-// src/pages/Board.js
 import React, { useState } from 'react';
 import BoardList from '../components/BoardList';
 import BoardForm from '../components/BoardForm';

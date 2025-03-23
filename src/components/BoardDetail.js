@@ -1,4 +1,3 @@
-// src/components/BoardDetail.js
 import React, { useState } from 'react';
 
 function BoardDetail({ post, onBack, onEdit, onDelete }) {
@@ -12,7 +11,7 @@ function BoardDetail({ post, onBack, onEdit, onDelete }) {
   };
 
   return (
-    <div>
+    <div className="board">
       <button onClick={onBack}>Back to list</button>
       {isEditing ? (
         <>

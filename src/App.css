@@ -1,12 +1,84 @@
-/* src/App.css */
+/* App Layout */
 .app {
   display: flex;
   height: 100vh;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .main-content {
   flex: 1;
+  padding: 40px;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  color: white;
   padding: 20px;
-  background-color: #f4f4f4;
+}
+
+
+/* Form Elements */
+.board input[type="text"],
+.board textarea {
+  padding: 10px;
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.board textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.board button {
+  padding: 8px 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.board button:hover {
+  background-color: #333;
+}
+
+/* List Styles */
+.board ul {
+  list-style: none;
+  padding: 0;
+}
+
+.board li {
+  background-color: white;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  margin-bottom: 10px;
+  transition: transform 0.1s ease-in-out;
+}
+
+.board li:hover {
+  transform: scale(1.01);
+}
+
+.board li strong {
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.board li strong:hover {
+  text-decoration: underline;
 }

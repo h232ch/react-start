@@ -1,19 +1,18 @@
-// src/components/BoardList.js
 import React from 'react';
 
 function BoardList({ posts, onSelect, onDelete }) {
   if (posts.length === 0) return <p>No posts yet.</p>;
 
   return (
-    <div>
+    <div className="board">
       <h3>Post List</h3>
       <ul>
         {posts.map(post => (
-          <li key={post.id} style={{ marginBottom: '10px' }}>
-            <strong onClick={() => onSelect(post)} style={{ cursor: 'pointer' }}>
+          <li key={post.id}>
+            <strong onClick={() => onSelect(post)}>
               {post.title}
             </strong>
-            <button onClick={() => onDelete(post.id)} style={{ marginLeft: '10px' }}>
+            <button onClick={() => onDelete(post.id)}>
               Delete
             </button>
           </li>
