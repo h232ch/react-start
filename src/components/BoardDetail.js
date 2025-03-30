@@ -52,8 +52,6 @@ function BoardDetail({ post, onBack, onEdit, onDelete }) {
 
   return (
     <div className="board">
-      <button onClick={onBack}>← Back to list</button>
-
       {isEditing ? (
         <>
           <input
@@ -66,17 +64,19 @@ function BoardDetail({ post, onBack, onEdit, onDelete }) {
             onChange={e => setBody(e.target.value)}
           />
           <button onClick={handleSave}>Save</button>
+          <button onClick={onBack}>Back</button>
         </>
       ) : (
         <>
           <h3>{post.title}</h3>
-          <p><strong>{post.user}</strong> - {post.time}</p>
+          <small>— {post.user} - {post.time}</small>
           <p>{post.body}</p>
           <button onClick={() => setIsEditing(true)}>Edit</button>
           <button onClick={() => {
             onDelete(post.id);
             onBack();
           }}>Delete</button>
+          <button onClick={onBack}>Back</button>
         </>
       )}
 

@@ -20,7 +20,7 @@ function BoardForm({ onSubmit }) {
   };
 
   return (
-    <div className="board">
+    <div className="board-form">
       <h3>Write a Post</h3>
       <input
         type="text"

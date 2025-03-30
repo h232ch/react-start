@@ -20,6 +20,16 @@
   padding: 20px;
 }
 
+.sidebar button {
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 0px;
+}
+
 
 /* Form Elements */
 /* ------------------------ */
@@ -28,10 +38,10 @@
 .board {
   max-width: 800px;
   margin: 0 auto;
-  padding: 40px;
-  background-color: #ffffff;
+  padding: 25px;
+  /* background-color: #ffffff; */
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 16px 26px rgba(0, 0, 0, 0.06);
   margin-bottom: 10px;
 }
 
@@ -58,7 +68,7 @@
 /* Buttons */
 .board button {
   padding: 10px 16px;
-  background-color: #007bff;
+  background-color: rgb(24, 23, 23);
   color: #fff;
   border: none;
   font-size: 14px;
@@ -68,7 +78,7 @@
 }
 
 .board button:hover {
-  background-color: #0056b3;
+  background-color: #4a4848;
 }
 
 /* Board List */
@@ -120,4 +130,29 @@
   color: #888;
   display: block;
   margin-top: 4px;
+}
+
+.board-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.board-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.board-list strong {
+  cursor: pointer;
+}
+
+.board-list button {
+  margin-left: 10px;
+}
+
+.board-form {
+  margin-bottom: 100px;
 }

@@ -22,12 +22,18 @@ function Board() {
 
   const addPost = (post) => {
     setPosts([...posts, { ...post, id: Date.now(), comments: [] }]);
-  };
-  
+  };  
 
   const updatePost = (updatedPost) => {
     setPosts(posts.map(p => (p.id === updatedPost.id ? updatedPost : p)));
+
+    // Fix: Also update selectedPost if it's the one being edited
+    if (selectedPost && selectedPost.id === updatedPost.id) {
+      setSelectedPost(updatedPost);
+    }
   };
+
+  
 
   const deletePost = (id) => {
     setPosts(posts.filter(p => p.id !== id));
@@ -35,8 +41,6 @@ function Board() {
       setSelectedPost(null);
     }
   };
-
-  
 
   return (
     <div className="board">

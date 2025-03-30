@@ -1,20 +1,16 @@
-import React from 'react';
+import React from "react";
 
 function BoardList({ posts, onSelect, onDelete }) {
   if (posts.length === 0) return <p>No posts yet.</p>;
 
   return (
-    <div className="board">
+    <div className="board-list">
       <h3>Post List</h3>
       <ul>
-        {posts.map(post => (
+        {posts.map((post) => (
           <li key={post.id}>
-            <strong onClick={() => onSelect(post)}>
-              {post.title}
-            </strong>
-            <button onClick={() => onDelete(post.id)}>
-              Delete
-            </button>
+            <strong onClick={() => onSelect(post)}>{post.title}</strong>
+            <button onClick={() => onDelete(post.id)}>Delete</button>
           </li>
         ))}
       </ul>
